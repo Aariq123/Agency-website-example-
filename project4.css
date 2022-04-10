@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+
+body{
+    height: 100vh;
+  
+}
+@media (max-width: 610px) {
+    .home-img{
+        display: none;
+    }
+
+    .home-content{
+        margin-left: 100px;
+    }
+
+    .btn{
+        margin-left: 0;
+    }
+}
+
+
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    font-size: 2rem;
+    font-weight: 700;
+    z-index: 100;
+}
+
+
+.toggle{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #f60f20;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+}
+
+
+.side div{
+    background-color: white;
+    height: 2px;
+    width: 40px;
+    margin: 10px 5px 10px 5px;
+}
+
+.cross div{
+    background-color: white;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    margin: 0px 5px 10px 5px;
+    position: absolute;
+    transform-origin: center;
+}
+
+.cross div:nth-child(1){
+    transform: rotate(50deg);
+}
+
+.cross div:nth-child(2){
+    transform: rotate(-50deg);
+}
+
+.cross div:nth-child(3){
+    display: none;
+}
+
+
+
+h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+p{
+    margin: 20px 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.home-img{
+    position: absolute;
+    height: 450px;
+    right: 0;
+    width: 50%;
+}
+
+.navigation{
+    display: none;
+}
+
+.n-active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    z-index: 10;
+    height: 100vh;
+    background-color: white;
+}
+
+.home{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    list-style: none;
+    font-size: 30px;
+    transform: translate(-50%,-50%);
+}
+
+.home a{
+    text-decoration: none;
+    color: black;
+}
+
+.social{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.social img{
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+}
+
+.home-content{
+    margin: 180px 0px 0px 50px;
+    width: 40%;
+}
+
+.home a:hover{
+    color: #f60f20;
+}
+
+.home li{
+    margin-top: 10px;
+}
+
+.btn{
+    margin: 200px 0 0 50px;
+    color: white;
+    text-decoration: none;
+    background-color: #f60f20;
+    font-size: 20px;
+    padding: 10px;
+}
+
+main{
+    margin: 200px 100px 0 100px;
+}
+
+main h1{
+    font-weight: 700;
+}
+main > p{
+    line-height: 35px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.grid img{
+    height: 150px;
+    width: 150px;
+    transform: translateX(60%);
+}
+
+.grid p, h2{
+    text-align: center;
+}
+.grid p{
+    padding: 15px 20px 15px 20px;
+    line-height: 25px;
+}
+
+.grid div:hover{
+    box-shadow:  1px 1px 3px 3px gray;
+}
+
+
+@media (max-width: 930px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }    
+}
+
+
+@media (max-width: 693px) {
+    .grid{
+        display:block;
+    }    
+    .grid div{
+        margin-bottom: 80px;
+    }
+
+    
+    .grid img{
+        
+    }
+}
+
+
+.work{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.work div{
+    position: relative;
+}
+
+.work div div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.8);
+    transition: 0.3s opacity ease;
+}
+
+.work a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+
+.work img{
+    height:250px;
+    width: 280px;
+}
+
+.work div:hover div{
+   opacity: 1;
+}
+
+footer{
+    margin: 100px;
+}
+
+footer h1{
+    font-weight: 700;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact form{
+    flex: 2;
+    background-color: rgb(235, 233, 233);
+    padding: 70px 20px 20px 20px;
+}
+
+
+
+form input[type=text]{
+    height: 25px;
+    font-size: 20px;
+    width: 45%;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    padding: 15px ;
+}
+
+
+
+form input[type=button]{
+    width: 100%;
+    color: white;
+    background: rgb(0, 0, 131);
+    border: none;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+@media (max-width:1050px) {
+    form input[type=text]{
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width:633px) {
+    footer{
+        margin: 70px;
+        margin-top: 100px;
+    }
+
+    .contact{
+        display: block;
+    }
+
+    .info2{
+        margin-top: 50px;
+    }
+}
+
+
+.info2{
+    flex: 1;
+    background-color: rgb(235, 233, 233);
+    padding: 70px 20px 20px 20px;
+    margin-left: 20px;
+}
+
+.info2 img{
+    height: 20px;
+    width: 20px;
+}
+
+.info2 div{
+    margin-bottom: 20px;
+}
