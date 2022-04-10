@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
     font-family: Arial;
 }
 
@@ -14,9 +14,13 @@ body{
     .home-img{
         display: none;
     }
+    .home-content h1{
+        font-size: 40px;
+    }
 
-    .home-content{
-        margin-left: 100px;
+    .home-content p{
+        line-height: 30px;
+        font-size: 25px;
     }
 
     .btn{
@@ -205,19 +209,32 @@ main > p{
 }
 
 
+
 @media (max-width: 693px) {
     .grid{
         display:block;
     }    
     .grid div{
-        margin-bottom: 80px;
-    }
-
-    
-    .grid img{
+        margin-bottom: 100px;
         
     }
+    .grid p{
+       font-size: 30px; 
+       line-height: 30px;
+    }
+
+    .grid h2{
+        font-size: 40px;
+    }
+
+    .grid img{
+        transform: translateX(-1%);
+    }
+    
+    
 }
+
+
 
 
 .work{
@@ -248,6 +265,7 @@ main > p{
     text-decoration: none;
     color: white;
     padding: 5px;
+    font-size: 30px;
     border: 1px solid white;
 }
 
@@ -301,13 +319,15 @@ form input[type=button]{
     font-size: 25px;
     margin-top: 10px;
 }
-
+/*
 @media (max-width:1050px) {
     form input[type=text]{
         width: 100%;
     }
     
 }
+*/
+
 
 
 @media (max-width:633px) {
@@ -326,6 +346,8 @@ form input[type=button]{
 }
 
 
+
+
 .info2{
     flex: 1;
     background-color: rgb(235, 233, 233);
@@ -341,3 +363,93 @@ form input[type=button]{
 .info2 div{
     margin-bottom: 20px;
 }
+
+
+@media (max-width: 450px){
+    footer{
+        margin:200px 30px 0 30px;
+    }
+
+    footer p{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    
+
+    .contact form{
+        padding: 0;
+        margin: 50px 20px 0 20px;
+    }
+    
+    form input[type=text]{
+        width: 90%;
+        font-size:30px ;
+    }
+
+    form input[type=button]{
+        padding: 10px;
+    }
+
+    .info2{
+        margin: 50px 20px 20px 20px  ;
+    }
+
+    .info2 h4{
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+
+
+@media (max-width: 450px){
+    main{
+        margin:200px 0 0 100px 0;
+
+    }
+
+    main h3{
+        font-size: 45px;
+    }
+    
+    main h1{
+        font-weight: 600;
+        font-size: 45px;
+    }
+    main > p{
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .work{
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 450px){
+    .home-img{
+        display: none;
+    }
+
+    .home-content{
+        
+        margin-left: 100px;
+    }
+
+    .btn{
+        margin-left: 0;
+    }
+    
+    .home-content .btn{
+        
+        color: white;
+        text-decoration: none;
+        background-color: #f60f20;
+        font-size: 35px;
+        padding: 10px;
+    }
+    section{
+        margin: 0;
+    }
+} 
