@@ -10,23 +10,6 @@ body{
     height: 100vh;
   
 }
-@media (max-width: 610px) {
-    .home-img{
-        display: none;
-    }
-    .home-content h1{
-        font-size: 40px;
-    }
-
-    .home-content p{
-        line-height: 30px;
-        font-size: 25px;
-    }
-
-    .btn{
-        margin-left: 0;
-    }
-}
 
 
 .logo{
@@ -103,8 +86,10 @@ p{
     display: none;
 }
 
+
 .n-active{
     position: fixed;
+    overflow: hidden;
     top: 0;
     left: 0;
     width: 100%;
@@ -147,6 +132,7 @@ p{
     width: 40%;
 }
 
+
 .home a:hover{
     color: #f60f20;
 }
@@ -155,8 +141,10 @@ p{
     margin-top: 10px;
 }
 
+
 .btn{
-    margin: 200px 0 0 50px;
+    display: inline-block;
+    margin: 50px 0 0 50px;
     color: white;
     text-decoration: none;
     background-color: #f60f20;
@@ -185,8 +173,9 @@ main > p{
 .grid img{
     height: 150px;
     width: 150px;
-    transform: translateX(60%);
 }
+
+
 
 .grid p, h2{
     text-align: center;
@@ -201,38 +190,9 @@ main > p{
 }
 
 
-@media (max-width: 930px) {
-    .grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }    
-}
 
 
 
-@media (max-width: 693px) {
-    .grid{
-        display:block;
-    }    
-    .grid div{
-        margin-bottom: 100px;
-        
-    }
-    .grid p{
-       font-size: 30px; 
-       line-height: 30px;
-    }
-
-    .grid h2{
-        font-size: 40px;
-    }
-
-    .grid img{
-        transform: translateX(-1%);
-    }
-    
-    
-}
 
 
 
@@ -303,10 +263,10 @@ footer h1{
 form input[type=text]{
     height: 25px;
     font-size: 20px;
-    width: 45%;
-    margin-right: 20px;
+    width: 43%;
+    margin-right: 15px;
     margin-bottom: 15px;
-    padding: 15px ;
+    padding: 10px ;
 }
 
 
@@ -319,31 +279,8 @@ form input[type=button]{
     font-size: 25px;
     margin-top: 10px;
 }
-/*
-@media (max-width:1050px) {
-    form input[type=text]{
-        width: 100%;
-    }
-    
-}
-*/
 
 
-
-@media (max-width:633px) {
-    footer{
-        margin: 70px;
-        margin-top: 100px;
-    }
-
-    .contact{
-        display: block;
-    }
-
-    .info2{
-        margin-top: 50px;
-    }
-}
 
 
 
@@ -365,91 +302,76 @@ form input[type=button]{
 }
 
 
-@media (max-width: 450px){
-    footer{
-        margin:200px 30px 0 30px;
-    }
-
-    footer p{
-        font-size: 30px;
-        line-height: 35px;
-    }
-    
-
-    .contact form{
-        padding: 0;
-        margin: 50px 20px 0 20px;
-    }
-    
-    form input[type=text]{
-        width: 90%;
-        font-size:30px ;
-    }
-
-    form input[type=button]{
-        padding: 10px;
-    }
-
-    .info2{
-        margin: 50px 20px 20px 20px  ;
-    }
-
-    .info2 h4{
-        font-size: 30px;
-        font-weight: 600;
-    }
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    font-size: 2rem;
+    font-weight: 700;
+    z-index: 100;
 }
 
 
 
-@media (max-width: 450px){
-    main{
-        margin:200px 0 0 100px 0;
 
-    }
-
-    main h3{
-        font-size: 45px;
-    }
-    
-    main h1{
-        font-weight: 600;
-        font-size: 45px;
-    }
-    main > p{
-        font-size: 35px;
-        line-height: 40px;
-    }
-
-    .work{
-        margin: auto;
-    }
-}
-
-
-@media (max-width: 450px){
-    .home-img{
+@media (max-width: 300px) {
+    section img{
         display: none;
     }
 
     .home-content{
-        
-        margin-left: 100px;
+        width: 70%;
     }
 
     .btn{
-        margin-left: 0;
+        margin: 10px 0px 50px 10px;
     }
-    
-    .home-content .btn{
-        
-        color: white;
-        text-decoration: none;
-        background-color: #f60f20;
-        font-size: 35px;
-        padding: 10px;
+
+    .logo{
+        left: 50px;
     }
-    section{
-        margin: 0;
+
+    main{
+        margin: 150px 30px 50px 30px;
     }
-} 
+
+
+    .work{
+        position: relative;
+        left: -20px;
+    }
+
+    .work img{
+        width:260px ;
+    }
+
+    .grid{
+        display: block;
+    }
+
+
+    .grid div{
+        margin-top: 50px;
+    }
+
+    footer{
+        margin: 150px 30px 30px 20px;
+    }
+
+    .contact{
+        display: block;
+    }
+
+    .contact form{
+        padding: 20px;
+    }
+
+
+    form input[type='text']{
+        width: 95%;
+    }
+
+    .info2{
+        margin: 50px 20px 40px 20px;
+    }
+}
