@@ -314,7 +314,7 @@ form input[type=button]{
 
 
 
-@media (max-width: 300px) {
+@media (max-width: 250px) {
     section img{
         display: none;
     }
